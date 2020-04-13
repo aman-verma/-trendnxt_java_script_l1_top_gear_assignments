@@ -1,0 +1,48 @@
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Prime Number</title>
+	</head>
+	<body>
+
+	  <br>
+	  <h3>Enter value upto which you want to print prime number</h3>
+	  <input type="text" name="enter" class="enter" value="" id="primeNum"/> <!--Input field to enter values -->
+	  <input type="button" value="click" onclick="countPrime();"/>
+	  <h2>Prime number between 1 and given number</h2> 
+	  <p id="demo" style="font-weight:bold"></p> <!--div to show the prime numbers result-->
+	  <script>
+		<!-- Function to find number is prime -->
+		function prime(num) 
+		{
+			if (num < 2) 
+			{ return false; }
+			var q = Math.floor(Math.sqrt(num));
+
+			for (var i = 2; i <= q; i++)
+			{
+				if (num % i == 0)
+				{
+					return false;
+				}
+			}
+
+            return true;
+		}
+		<!-- Function to add the prime numbers to array -->
+		function countPrime()
+		{
+			var i;
+			var arr = [];
+			for(i=1;i<primeNum.value;i++)
+			{
+				if(prime(i))
+					arr[arr.length] = " "+i+" ";
+			}
+			document.getElementById("demo").innerHTML = arr.join(',');
+		}
+	  </script>
+
+	</body>
+</html>

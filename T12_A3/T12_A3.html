@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>store 10 employee names in an array. Print only the alternative
+names one below the other.</title>
+</head>
+<body>  
+<h2>store 10 employee names in an array. Print only the alternative
+names one below the other..</h2>
+<h3 id="sample"><h3>
+<p id = "result" style="font-size:20px"></p>
+
+  <script>
+	var employee = ["a","b","c","d","e","f","g","h","i","j"];
+	document.getElementById("sample").innerHTML = employee.join()
+	for(i=0;i<employee.length;i+=2)
+	{
+	  document.getElementById("result").innerHTML +=employee[i] + " -- ";
+	}
+  </script>
+</body>
+</html>

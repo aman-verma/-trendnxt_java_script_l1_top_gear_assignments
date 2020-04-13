@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset=utf-8 />
+	<title>'CD' details</title>
+  </head>
+
+  <body>  
+    <div id="display" >
+		<div>
+		  <p id = "">CD NAME : <span id="cdName" ></span> </p>
+		  <p id = "">CD Publisher: <span id="cdPublisher" ></</p>
+		  <p id = "">CD Price: <span id="cdPrice" ></</p>
+		</div>
+	</div>
+	
+	
+  <script>
+  var CD = {cdName: "CD Name", Publisher :"CD Publisher" , Price :100} ;
+  
+
+  function displayAllDetails(CD)
+  {
+	
+	var price = CD.Price;
+	price += ((price+10)/100);
+	price -= ((price+3)/100);
+	
+	document.getElementById("cdName").innerHTML = CD.cdName;
+	document.getElementById("cdPublisher").innerHTML = CD.Publisher;
+	document.getElementById("cdPrice").innerHTML = price;
+	
+  }
+  
+  displayAllDetails(CD);
+  
+  </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Color change</title>
+  </head>
+
+  <body>
+  <p id="msg">Foreground
+  </p>
+    <button onclick="changeColor()">Input</button>
+	<script type="text/javascript">
+	
+	function changeColor() {
+		function callback() {
+			input1 = prompt("Input backgroud color.", 'red');
+			
+			if (input1) {
+				document.body.style.backgroundColor = input1;
+				input2 = prompt("Input backgroud color.", 'green');
+				document.body.style.color = input2;
+				window.requestAnimationFrame(callback);
+			}
+		}
+		window.requestAnimationFrame(callback);
+	}
+   
+</script>
+  </body>
+</html>

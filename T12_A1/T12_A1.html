@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title> JavaScript program to count and display the items of a dropdown list, in an alert
+window.</title>
+</head>
+<body>
+  <h2> JavaScript program to count and display the items of a dropdown list, in an alert
+window.</h2>
+  <select id='dropdown'>
+    <option value='1'>One</option>
+    <option value='2'>Two</option>
+    <option value='3'>Three</option>
+    </select>
+	<p id="result"></p>
+  <script>
+    var dropdownArray= [];
+	var dropdown = document.getElementById('dropdown');
+    function getOptions(){
+		for (i = 0; i < dropdown.options.length; i++) {
+		   dropdownArray[i] = dropdown.options[i].value;
+		}
+        document.getElementById("result").innerHTML = dropdownArray.join() + "--- &length is " + dropdown.options.length; 
+		}
+		getOptions();
+		
+	
+  </script>
+</body>
+</html>

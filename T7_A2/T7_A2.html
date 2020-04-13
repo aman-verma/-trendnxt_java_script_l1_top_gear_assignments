@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Merge alternate array</title>
+</head>
+<body>
+<p id = "result" style="font-size: 20px"></p>
+<script>
+let a = ['a','b','c'];
+let b = [1, 2, 3];
+  var merge  = [];
+var mergeList = function(){
+  
+  var m=0,n=0;
+  for(var i=0; i<(b.length+a.length); i++){
+       if(i%2==0) {
+		  merge[i]=a[m++];
+		  console.log()
+	  } else {
+		  merge[i]=b[n++];
+	  }
+  }
+
+  return merge;
+  
+}
+mergeList()
+document.getElementById("result").innerHTML +="[" + merge + "]";
+</script>
+</body>
+</html>

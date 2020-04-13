@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Get the last 'n' elements of the array</title>
+</head>
+<body>
+<p id = "result" style="font-size: 20px"></p>
+<script>
+ function parse_URL(url) {
+    var a = document.createElement('a');
+    a.href = url;
+    return {
+	    protocol: a.protocol.replace(':', ''),
+        host: a.hostname,
+        port: a.port,
+	    queryString : url.substring( url.indexOf('?') + 1 )
+
+	}
+ }
+
+console.log(parse_URL('https://www.domain.com/?query=123'))
+
+</script>
+</body>
+</html>

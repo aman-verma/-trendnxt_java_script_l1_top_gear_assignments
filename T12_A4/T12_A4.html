@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title> store 10 assessment marks in an array. Find the average marks and
+display</title>
+</head>
+<body>  
+<h2> store 10 assessment marks in an array. Find the average marks and
+display</h2>
+<h3 id="sample">[['a', 50], ['bb', 97], ['cc', 78], ['dd', 63], ['ee', 68],['ff', 50], ['gg', 97], ['hh', 78], ['ii', 63], ['jj', 68]];<h3>
+<p id = "result" style="font-size:20px"></p>
+
+  <script>
+	var students = [['a', 50], ['bb', 97], ['cc', 78], ['dd', 63], ['ee', 68],['ff', 50], ['gg', 97], ['hh', 78], ['ii', 63], ['jj', 68]];
+   
+	var avg ;
+
+	for (var i=0; i < students.length; i++) {
+	        var sum= 0;
+			sum += students[i][1];
+			 avg = (sum/students.length);
+	}
+	
+	
+	document.getElementById("result").innerHTML += "average is------"+avg;
+  </script>
+</body>
+</html>

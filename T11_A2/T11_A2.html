@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Find the largest numbers</title>
+</head>
+<body
+  <h3>-5, -2, -6, -8, -1</h3>
+  
+  <p id="result" style= "font-size: 20px">Result: </p>
+  <script>
+	a=-5;
+	b=-2;
+	c=-6;
+	d= -8;
+	f=-1;
+	if (a>b && a>c && a>d && a>f)
+	{
+		document.getElementById("result").innerHTML += a;
+	}
+	else if (b>a && b>c && b>d && b>f)
+	{
+		document.getElementById("result").innerHTML += b;
+	}
+	else if (c>a && c>b && c>d && c>f)
+	{
+		document.getElementById("result").innerHTML += c;
+	}
+	else if (d>a && d>c && d>b && d>f)
+	{
+		document.getElementById("result").innerHTML += d;
+	}
+	else
+	{
+		document.getElementById("result").innerHTML += f;
+	}
+
+  </script>
+</body>
+</html>

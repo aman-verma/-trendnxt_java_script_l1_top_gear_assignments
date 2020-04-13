@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Domantion prompt</title>
+</head>
+<body>
+<button onclick="donateForCause()"> 
+        Donate for cause!
+    </button> 
+<p style="font-size:18px">Donation in roundoff ======= <span id = "result" ></span></p>
+<script>
+function donateForCause() {
+  var donationAmt = prompt("Please enter donation amount",""); 
+  if (donationAmt != null) { 
+	if(isNaN(donationAmt)){		
+      alert('enter number only')
+    }
+    else{
+	  document.getElementById("result").innerHTML =  Math.round(donationAmt, 0); 
+    }	
+  }		
+  
+}
+
+
+
+</script>
+</body>
+</html>
